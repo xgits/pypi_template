@@ -2,15 +2,15 @@ pypi template
 
 https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-# environment
+# preparation
 py -m pip install --upgrade pip
 
 py -m pip install --upgrade build
 
-py -m build
-
 py -m pip install --upgrade twine
 
+# build
+py -m build
 
 # test
 py -m twine upload --repository testpypi dist/*
